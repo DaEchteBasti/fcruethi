@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--- Inculde Fontawesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!--- Inculde Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--- Inculde JavaScript -->
+  <script src="js/script.js" charset="utf-8"></script>
+
+  <!-- Google Font Anton & Teko-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;700&display=swap" rel="stylesheet">
+
+  <!-- Embed Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo_fcrüthi.png" alt="logo-fcrüthi"></a>
+    </div>
+
+    <nav id="main_menu">
+      <!-- List of navigation -->
+      <ul>
+        <li><a class="main-nav-blue" href="index.html">Home</a></li>
+        <li><a href="mannschaften.html">Mannschaften</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <button class="nav-burger open" type="button" name="button" onclick="toggleMainNav()">
+        <i data-feather="menu"></i>
+      </button>
+      <button class="nav-burger close" type="button" name="button" onclick="toggleMainNav()">
+        <i data-feather="x"></i>
+      </button>
+    </nav>
+
+  </header>
+
+  <!--- Main content -->
+  <main class="content">
+
+    <!-- Home section -->
+    <section id="home-section">
+      <h1 class="page-title">Willkommen <span class="after">beim</span> <span style="color: #0074BE">FC Rüthi</span>
+      </h1>
+
+
+      <!-- Video home section -->
+      <div class="video-fcruethi">
+        <video controls autoplay muted>
+          <source src="assets/video/fc rüthi-video.mp4" type="video/mp4" alt="your browser doesn't support this video">
+        </video>
+      </div>
+      <p>Gemeinsam am <span style="color: #0074BE">Ball</span> </p>
+    </section>
+
+
+
+    <!-- Iframe News Vereinssporthalle-->
+
+    <section class="news">
+      <div class="news-img">
+        <img src="assets/images/clubhaus-ruethi.png" alt="clubhaus-ruethi">
+      </div>
+
+      <div class="news-text">
+        <h2>Clubhaus Rüthi</h2>
+        <p> <a href="https://n2a.ch/projects/clubhaus-ruethi" target="_blank">Ein flacher Baukörper, der sich um das
+            bestehende Vereinsgebäude schmiegt, wird entlang der Sportplatzstrasse platziert. Durch die Blitzform des
+            Gebäudes, entstehen zwei gefasste Plätze. Der Eingangsbereich, der als Treffpunkt dient und die Terrasse die
+            als ZuschAuertribüne und Spielplatz genutzt werden kann. So kann auch während der Bauphase das bestehende
+            Clubhaus bis zum Schluss verwendet werden. Das Volumen wird so gesetzt, dass es das Areal zur Strasse hin
+            schliesst und somit für die Adressbildung verantwortlich ist. Der Platz vor dem Eingang erhält hiermit eine
+            hohe Bedeutung. Den Höhenunterschied zwischen Strasse und dem Feld wird für eine Zuschauertribüne genutzt,
+            um bei Wettkämpfen für die grosse Stimmung zu sorgen...</a></p>
+      </div>
+    </section>
+
+
+    <!-- Tabelle -->
+    <div class="table-3league">
+      <table class="table_3_league">
+        <tr>
+          <th class="rank">1.</th>
+          <th class="mannschaft">FC Ruggell 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">46 : 5</th>
+          <th class="punkte">28</th>
+        </tr>
+
+        <tr>
+          <th class="rank">2.</th>
+          <th class="mannschaft">FC Besa 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">48 : 11</th>
+          <th class="punkte">25</th>
+        </tr>
+
+        <tr>
+          <th class="rank">3.</th>
+          <th class="mannschaft">FC Rebstein 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">27 : 10</th>
+          <th class="punkte">25</th>
+        </tr>
+
+        <tr class="table-fcruethi">
+          <th class="rank">4.</th>
+          <th class="mannschaft">FC Rüthi 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">33 : 21</th>
+          <th class="punkte">24</th>
+        </tr>
+
+        <tr>
+          <th class="rank">5.</th>
+          <th class="mannschaft">FC Diepoldsau-Schmitter 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">21 : 13</th>
+          <th class="punkte">22</th>
+        </tr>
+
+        <tr>
+          <th class="rank">6.</th>
+          <th class="mannschaft">FC Montlingen 2</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">21 : 28</th>
+          <th class="punkte">13</th>
+        </tr>
+
+        <tr>
+          <th class="rank">7.</th>
+          <th class="mannschaft">FC Staad 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">22 : 26</th>
+          <th class="punkte">13</th>
+        </tr>
+
+        <tr>
+          <th class="rank">8.</th>
+          <th class="mannschaft">FC Buchs 2</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">22 : 32</th>
+          <th class="punkte">11</th>
+        </tr>
+
+        <tr>
+          <th class="rank">9.</th>
+          <th class="mannschaft">USV Eschen/Mauren 2</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">16 : 26</th>
+          <th class="punkte">28</th>
+        </tr>
+
+        <tr>
+          <th class="rank">10.</th>
+          <th class="mannschaft">FC Gams 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">12 : 34</th>
+          <th class="punkte">9</th>
+        </tr>
+
+        <tr>
+          <th class="rank">11.</th>
+          <th class="mannschaft">FC Rorschach Goldach 17 2</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">14 : 39</th>
+          <th class="punkte">7</th>
+        </tr>
+
+        <tr>
+          <th class="rank">12.</th>
+          <th class="mannschaft">FC St. Margrethen 1</th>
+          <th class="spiele">11</th>
+          <th class="torverhaeltnis">8 : 45</th>
+          <th class="punkte">2</th>
+        </tr>
+
+      </table>
+    </div>
+    <a class="button-spielplan"
+      href="https://matchcenter.ofv.swiss/default.aspx?oid=9&lng=1&v=1725&t=39938&ls=22332&sg=63081&a=pt"
+      target="_blank">Spielplan</a>
+
+
+    </div>
+
+
+
+
+  </main>
+
+  <!--- Footer -->
+  <footer>
+
+    <!-- Logo white -->
+    <div class="logo-white">
+      <img src="assets/images/logo_fcrüthi_white.png" alt="logo-fcrüthi-white">
+    </div>
+
+    <!-- Impressum -->
+    <div class="impressum">
+      <a href="impressum.html">Impressum</a>
+    </div>
+    <!-- Social media icons -->
+    <div class="social-media-icons">
+      <a href="https://www.instagram.com/fcruethi/" target="_blank"><i class="insta" data-feather="instagram"></i></a>
+      <a href="https://www.facebook.com/fcruethi/?locale=de_DE" target="_blank"><i class="facebook"
+          data-feather="facebook"></i></a>
+      <a href="https://matchcenter.ofv.swiss/default.aspx?v=1725&oid=9&lng=1&a=as" target="_blank"><img
+          src="assets/images/icons/sfvasf_white.png" alt="sfvasf_white"></a>
+    </div>
+
+  </footer>
+</body>
+
+
+<script>
+  //    Main nav
+  function toggleMainNav() {
+    let element = document.getElementById('main_menu');
+    element.classList.toggle('expanded')
+  }
+  //Replace feather icons with svg's
+  feather.replace()
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
