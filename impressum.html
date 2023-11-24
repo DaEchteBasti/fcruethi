@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Inculde Fontawesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--- Inculde Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--- Inculde JavaScript -->
+    <script src="js/script.js" charset="utf-8"></script>
+    
+
+    <!-- Google Font Anton & Teko-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Embed Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo_fcrüthi.png" alt="logo-fcrüthi"></a>
+        </div>
+
+        <nav id="main_menu">
+            <!-- List of navigation -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mannschaften.html">Mannschaften</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="nav-burger open" type="button" name="button" onclick="toggleMainNav()">
+                <i data-feather="menu"></i>
+            </button>
+            <button class="nav-burger close" type="button" name="button" onclick="toggleMainNav()">
+                <i data-feather="x"></i>
+            </button>
+        </nav>
+
+    </header>
+
+    <main class="impressum">
+        <!-- Title impressum -->
+        <h1><span style="color: #0074BE">Impressum</span></h1>
+        <div class="impressum-informations">
+            <h2>Verantwortlich für den Inhalt der Website</h2>
+            <p>Bastian Geisser<br>Alpsteinstrasse 16<br>9464 Rüthi<br>+41 79 923 85 81<br>bastian.geisser@bluewin.ch</p>
+        </div>
+        <div class="quelle-media">
+            <h2>Quellenangabe der Medien</h2>
+            <a href="https://fcruethi.ch/" target="_blank">
+                <p>https://fcruethi.ch/</p>
+            </a>
+            <a href="https://n2a.ch/projects/clubhaus-ruethi">
+                <p>n2a.ch</p>
+            </a>
+
+
+        </div>
+
+
+
+    </main>
+
+    <!--- Footer -->
+    <footer>
+
+        <!-- Logo white -->
+        <div class="logo-white">
+            <img src="assets/images/logo_fcrüthi_white.png" alt="logo-fcrüthi-white">
+        </div>
+
+        <!-- Impressum -->
+        <div class="impressum">
+            <a class="impressum-underline" href="impressum.html">Impressum</a>
+        </div>
+        <!-- Social media icons -->
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com/fcruethi/" target="_blank"><i class="insta"
+                    data-feather="instagram"></i></a>
+            <a href="https://www.facebook.com/fcruethi/?locale=de_DE" target="_blank"><i class="facebook"
+                    data-feather="facebook"></i></a>
+            <a href="https://matchcenter.ofv.swiss/default.aspx?v=1725&oid=9&lng=1&a=as" target="_blank"><img
+                    src="assets/images/icons/sfvasf_white.png" alt="sfvasf_white"></a>
+        </div>
+
+    </footer>
+
+</body>
+
+<script>
+    //    Main nav
+    function toggleMainNav() {
+        let element = document.getElementById('main_menu');
+        element.classList.toggle('expanded')
+    }
+    //Replace feather icons with svg's
+    feather.replace()
+
+</script>
+
+
+</html>
