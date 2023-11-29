@@ -187,6 +187,16 @@ table {
   border-collapse: collapse;
 }
 
+.table_3_league .labeling-table{
+font-weight: 700;
+
+}
+
+.labeling-table .rank{
+  text-decoration: none;
+  
+}
+
 .table-3league {
   display: flex;
   justify-content: center;
